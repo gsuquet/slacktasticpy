@@ -1,0 +1,9 @@
+name: Integration into the main branch
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  label:
+    uses: gsuquet/workflows/.github/workflows/automation-labeler.yml@v1.0.1
